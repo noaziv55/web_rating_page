@@ -1,0 +1,112 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RatingPage
+build_property.RootNamespace = RatingPage
+build_property.ProjectDir = C:\Users\Noam\source\repos\RatingPage\RatingPage\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Noam\source\repos\RatingPage\RatingPage
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/AutoRates/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1JhdGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/AutoRates/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1JhdGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/AutoRates/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1JhdGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/AutoRates/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1JhdGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/AutoRates/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1JhdGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/AutoRates/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1JhdGVzXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/MyRates/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlSYXRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/MyRates/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlSYXRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/MyRates/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlSYXRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/MyRates/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlSYXRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/MyRates/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlSYXRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/MyRates/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlSYXRlc1xTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Rates/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Rates/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Rates/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Rates/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Rates/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Rates/search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcc2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Noam/source/repos/RatingPage/RatingPage/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ksq9b9h7v7
