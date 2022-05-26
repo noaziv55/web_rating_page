@@ -25,14 +25,6 @@ namespace RatingPage.Services
         {
             return await _context.Rate.ToListAsync();
         }
-        
-        public async Task<ICollection<Rate>?> GetRateBySearch (string query)
-        {
-            var q = from rate in _context.Rate
-                    where rate.Feedback.Contains(query)
-                    select rate;
-            return await q.ToListAsync();
-        }
 
         public async Task<Rate> GetRateById(int id)
         {

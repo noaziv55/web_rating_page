@@ -32,9 +32,12 @@ namespace RatingPage.Controllers
         }
 
         [HttpPost]
-        public async Task<ICollection<Rate>?> Search(string query)
+        public async Task<IActionResult> Search(string query)
         {
-            return await _service.GetRateBySearch(query);
+            var q = from rate in _service.GetRate()
+                    where rate.Feedback.Contains(query)
+                    select rate;
+            return View(await q.ToListAsync());
         }
 
         // GET: Rates/Details/5
