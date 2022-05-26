@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RatingPage.Data;
+using RatingPage.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<RatingPageContext>(options =>
@@ -8,6 +10,7 @@ builder.Services.AddDbContext<RatingPageContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<RateService>();
 
 var app = builder.Build();
 

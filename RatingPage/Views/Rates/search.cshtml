@@ -4,9 +4,7 @@
     ViewData["Title"] = "Search";
 }
 
-<h1>Search</h1>
-
-
+<h4>Search</h4>
 <table class="table">
     <thead>
         <tr>
@@ -43,8 +41,8 @@
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-success">Delete</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
         }
@@ -53,7 +51,7 @@
 
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-success">Back to List</a>
 </div>
 
 @section Scripts {

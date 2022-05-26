@@ -9,8 +9,9 @@
       "RatingPage/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.5",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.5"
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.1",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.5",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.1"
         },
         "runtime": {
           "RatingPage.dll": {}
@@ -893,15 +894,15 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.5": {},
-      "Microsoft.EntityFrameworkCore.Design/6.0.5": {
+      "Microsoft.EntityFrameworkCore.Design/6.0.1": {
         "dependencies": {
           "Humanizer.Core": "2.8.26",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.5"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "6.0.5.0",
-            "fileVersion": "6.0.522.21804"
+            "assemblyVersion": "6.0.1.0",
+            "fileVersion": "6.0.121.56712"
           }
         }
       },
@@ -929,9 +930,9 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.5": {
+      "Microsoft.EntityFrameworkCore.Tools/6.0.1": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.5"
+          "Microsoft.EntityFrameworkCore.Design": "6.0.1"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -1223,6 +1224,14 @@
           }
         }
       },
+      "MySqlConnector/2.1.2": {
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1376,6 +1385,19 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {
             "assemblyVersion": "5.11.0.10",
             "fileVersion": "5.11.0.10"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.5",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "MySqlConnector": "2.1.2"
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "6.0.1.0",
+            "fileVersion": "6.0.1.0"
           }
         }
       },
@@ -2445,12 +2467,12 @@
       "path": "microsoft.entityframeworkcore.analyzers/6.0.5",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.5.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.5": {
+    "Microsoft.EntityFrameworkCore.Design/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zNjMWJ6MJ/Qm7S6wFBqVgn7DEpilbDMy0xgA7c4Y1yY9/LoaC2pWwWO4ePaYoPCZpLx/eTViWEr5ZXta/vK//Q==",
-      "path": "microsoft.entityframeworkcore.design/6.0.5",
-      "hashPath": "microsoft.entityframeworkcore.design.6.0.5.nupkg.sha512"
+      "sha512": "sha512-odZLopaluipZXgJxue4VbBXe9YoTOOmg324rkyr0XqXWR7DSdWy5Mi0+99OvsOmvl6LxEqK4IOgNnycB+oF3pQ==",
+      "path": "microsoft.entityframeworkcore.design/6.0.1",
+      "hashPath": "microsoft.entityframeworkcore.design.6.0.1.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.5": {
       "type": "package",
@@ -2466,12 +2488,12 @@
       "path": "microsoft.entityframeworkcore.sqlserver/6.0.5",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.6.0.5.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.5": {
+    "Microsoft.EntityFrameworkCore.Tools/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aeCzVNLmDl9IfB19WAjrlKcG61Cl4/ZV/9ubifmifKEps+kvMkKIcams5j+8q6dtx9/UL2x3tbOz2BS3eU0sXQ==",
-      "path": "microsoft.entityframeworkcore.tools/6.0.5",
-      "hashPath": "microsoft.entityframeworkcore.tools.6.0.5.nupkg.sha512"
+      "sha512": "sha512-jXhlTOcFct3U9YiH9KNfjIHzEPxjXgH7hiriWoZJ0PtT9/GGeWHu9Dblb5D441X+91EMqx7jbpKHNMIu6mvz5w==",
+      "path": "microsoft.entityframeworkcore.tools/6.0.1",
+      "hashPath": "microsoft.entityframeworkcore.tools.6.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
       "type": "package",
@@ -2676,6 +2698,13 @@
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
     },
+    "MySqlConnector/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JVokQTUNN3WHAu9Vw8ieeq1dXTFokJiig5P0VJ4f439UxRrsPo6SaVWC8Zdm6mkPeQFhZ0/9afdWa02EY/1j/w==",
+      "path": "mysqlconnector/2.1.2",
+      "hashPath": "mysqlconnector.2.1.2.nupkg.sha512"
+    },
     "NETStandard.Library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -2752,6 +2781,13 @@
       "sha512": "sha512-mCv/GzvMk5iatWoZY41PoIShEbwVxq9CDCc1fV/uqPFKZ4DD/1JuKZ5AL/FJJRsTanvMR3EOXKYCLdQ7PFYn8Q==",
       "path": "nuget.versioning/5.11.0",
       "hashPath": "nuget.versioning.5.11.0.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sFIo5e9RmQoCTEvH6EeSV8ptmX3dw/6XgyD8R93X/i7A9+XCeG9KTjSNjrszVjVOtCu/eyvYqqcv2uZ/BHhlYA==",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.1",
+      "hashPath": "pomelo.entityframeworkcore.mysql.6.0.1.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

@@ -9,7 +9,7 @@ namespace RatingPage.Data
 {
     public class RatingPageContext : DbContext
     {
-        public RatingPageContext (DbContextOptions<RatingPageContext> options)
+        public RatingPageContext(DbContextOptions<RatingPageContext> options)
             : base(options)
         {
         }

@@ -7,47 +7,45 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RatingPage.Data;
 using RatingPage.Models;
+using RatingPage.Services;
 
 namespace RatingPage.Controllers
 {
     public class RatesController : Controller
     {
-        private readonly RatingPageContext _context;
+        private readonly RateService _service;
 
-        public RatesController(RatingPageContext context)
+        public RatesController(RateService service)
         {
-            _context = context;
+            _service = service;
         }
 
         // GET: Rates
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Rate.ToListAsync());
+              return View(await _service.GetAllRates());
         }
 
         public async Task<IActionResult> Search()
         {
-            return View(await _context.Rate.ToListAsync());
+            return View(await _service.GetAllRates());
         }
 
         [HttpPost]
-        public async Task<IActionResult> Search(string query)
+        public async Task<ICollection<Rate>?> Search(string query)
         {
-            var q = from rate in _context.Rate
-                    where rate.Feedback.Contains(query)
-                    select rate;
-            return View(await q.ToListAsync());
+            return await _service.GetRateBySearch(query);
         }
 
         // GET: Rates/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Rate == null)
+            if (id == null || _service.GetRate() == null)
             {
                 return NotFound();
             }
 
-            var rate = await _context.Rate
+            var rate = await _service.GetRate()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (rate == null)
             {
@@ -73,8 +71,7 @@ namespace RatingPage.Controllers
             rate.Time = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
             if (ModelState.IsValid)
             {
-                _context.Add(rate);
-                await _context.SaveChangesAsync();
+                await _service.AddRate(rate);
                 return RedirectToAction(nameof(Index));
             }
             return View(rate);
@@ -83,12 +80,12 @@ namespace RatingPage.Controllers
         // GET: Rates/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Rate == null)
+            if (id == null || _service.GetRate() == null)
             {
                 return NotFound();
             }
 
-            var rate = await _context.Rate.FindAsync(id);
+            var rate = await _service.GetRateByID(id);
             if (rate == null)
             {
                 return NotFound();
@@ -113,12 +110,11 @@ namespace RatingPage.Controllers
             {
                 try
                 {
-                    _context.Update(rate);
-                    await _context.SaveChangesAsync();
+                    await _service.UpdateRate(rate);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!RateExists(rate.Id))
+                    if (!_service.RateExists(rate.Id))
                     {
                         return NotFound();
                     }
@@ -135,13 +131,12 @@ namespace RatingPage.Controllers
         // GET: Rates/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Rate == null)
+            if (id == null || _service.GetRate() == null)
             {
                 return NotFound();
             }
 
-            var rate = await _context.Rate
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var rate = await _service.GetRateByID(id);
             if (rate == null)
             {
                 return NotFound();
@@ -155,23 +150,17 @@ namespace RatingPage.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Rate == null)
+            if (_service.GetRate() == null)
             {
                 return Problem("Entity set 'RatingPageContext.Rate'  is null.");
             }
-            var rate = await _context.Rate.FindAsync(id);
+            var rate = await _service.GetRateById(id);
             if (rate != null)
             {
-                _context.Rate.Remove(rate);
+                await _service.RemoveRate(rate);
             }
             
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool RateExists(int id)
-        {
-          return _context.Rate.Any(e => e.Id == id);
         }
     }
 }

@@ -4,7 +4,7 @@
 
 namespace RatingPage.Migrations
 {
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,8 @@ namespace RatingPage.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Rating = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Feedback = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true)
+                    Feedback = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    Time = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -11,8 +11,8 @@ using RatingPage.Data;
 namespace RatingPage.Migrations
 {
     [DbContext(typeof(RatingPageContext))]
-    [Migration("20220519100047_Rating")]
-    partial class Rating
+    [Migration("20220525215039_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

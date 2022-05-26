@@ -1,54 +1,75 @@
-﻿using RatingPage.Models;
-
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using RatingPage.Data;
+using RatingPage.Models;
 
 namespace RatingPage.Services
 {
-    public class RateService:IRateService
+    public class RateService
     {
-        private static List<Rate> rates = new List<Rate>();
-        public List<Rate> GetAllRates() {
-            return rates;
-        }
-        public Rate Get(int id) {
-            return rates.Find(x => x.Id == id);
-        }
-        public void Create(string name, int rating, string feedback)
+        private readonly RatingPageContext _context;
+
+        public RateService(RatingPageContext context)
         {
-            int nextId = 0;
-            if (rates.Count > 0)
-            {
-                nextId = rates.Max(x => x.Id) + 1;
-
-            }
-            rates.Add(new Rate() { Id = nextId, Name = name, Rating = rating, Feedback = feedback , Time = DateTime.Now.ToString("MM/dd/yyyy HH:mm") });
-
+            _context = context;
         }
 
-        public void Edit(int id, string name, int rating, string feedback) {
+        // GET: Rates
 
-            Rate rate = Get(id);
-            rate.Name = name;
-            rate.Rating = rating;
-            rate.Feedback = feedback;
-            rate.Time = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
-           
+        public DbSet<Rate>? GetRate()
+        {
+            return _context.Rate;
         }
-        public void Delete(int id) {
-            rates.Remove(Get(id));
-        }
-        public List<Rate> Search ( string query) {
 
-            List<Rate> searchRates = new List<Rate>();
-
-            foreach (Rate rate in rates)
-            {
-                if (rate.Feedback.Contains(query))
-                {
-                    searchRates.Add(rate);
-                }
-            }
-            return searchRates;
-            
+        public async Task<ICollection<Rate>?> GetAllRates()
+        {
+            return await _context.Rate.ToListAsync();
         }
+        
+        public async Task<ICollection<Rate>?> GetRateBySearch (string query)
+        {
+            var q = from rate in _context.Rate
+                    where rate.Feedback.Contains(query)
+                    select rate;
+            return await q.ToListAsync();
+        }
+
+        public async Task<Rate> GetRateById(int id)
+        {
+            return await _context.Rate.FindAsync(id);
+        }
+
+        public async Task<Rate?> GetRateByID(int? id)
+        {
+            return await _context.Rate
+                .FirstOrDefaultAsync(m => m.Id == id);
+        }
+
+        public async Task AddRate(Rate rate)
+        {
+            _context.Add(rate);
+            await _context.SaveChangesAsync();
+            return;
+        }
+
+        public async Task UpdateRate(Rate rate)
+        {
+            _context.Update(rate);
+            await _context.SaveChangesAsync();
+            return;
+        }
+
+        public async Task RemoveRate(Rate rate)
+        {
+            _context.Rate.Remove(rate);
+            await _context.SaveChangesAsync();
+            return;
+        }
+
+        public bool RateExists(int id)
+        {
+            return _context.Rate.Any(e => e.Id == id);
+        }
+
     }
 }

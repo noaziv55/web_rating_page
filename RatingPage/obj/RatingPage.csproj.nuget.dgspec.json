@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Noam\\source\\repos\\RatingPage\\RatingPage\\RatingPage.csproj": {}
+    "C:\\Users\\noazi\\source\\repos\\web_rating_page\\RatingPage\\RatingPage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Noam\\source\\repos\\RatingPage\\RatingPage\\RatingPage.csproj": {
+    "C:\\Users\\noazi\\source\\repos\\web_rating_page\\RatingPage\\RatingPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Noam\\source\\repos\\RatingPage\\RatingPage\\RatingPage.csproj",
+        "projectUniqueName": "C:\\Users\\noazi\\source\\repos\\web_rating_page\\RatingPage\\RatingPage.csproj",
         "projectName": "RatingPage",
-        "projectPath": "C:\\Users\\Noam\\source\\repos\\RatingPage\\RatingPage\\RatingPage.csproj",
-        "packagesPath": "C:\\Users\\Noam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noam\\source\\repos\\RatingPage\\RatingPage\\obj\\",
+        "projectPath": "C:\\Users\\noazi\\source\\repos\\web_rating_page\\RatingPage\\RatingPage.csproj",
+        "packagesPath": "C:\\Users\\noazi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\noazi\\source\\repos\\web_rating_page\\RatingPage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Noam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\noazi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,11 +48,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.5, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [

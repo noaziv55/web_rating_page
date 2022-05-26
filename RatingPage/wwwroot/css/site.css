@@ -14,5 +14,44 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url(wallpaper.jpg);
+    background-size: auto;
+    overflow: clip;
+}
+
+.navbar-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.outterBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 30px;
+    background: white;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 60px;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.container{
+    min-height: 70vh;
+    align-self: center;
+}
+
+.very-cool-margin {
+    margin-bottom: 10px;
 }
