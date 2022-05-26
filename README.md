@@ -1,4 +1,4 @@
-# WebApi
+# Rating Page
 ## Table of Contents
 1. Introduction
 2. Demonstration Images
