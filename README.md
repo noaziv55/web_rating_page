@@ -17,11 +17,13 @@ In this project we created ASP.net project for rating the [ChatApp website](http
 
 # 2. Demonstration Images
 ### The openning Page:
-
+![RatingPage](https://user-images.githubusercontent.com/92301625/170515616-56e92138-92e7-452c-9d99-956aad054ec6.png)
 ### Adding new rate:
-
+![CreatenewRate](https://user-images.githubusercontent.com/92301625/170515657-d63f6cbc-bec0-4566-ae13-0384658d9c10.png)
+![rating](https://user-images.githubusercontent.com/92301625/170515701-0b7805cc-1a23-4655-8d6c-f482211f392b.png)
 ### Serching:
-
+![searching1](https://user-images.githubusercontent.com/92301625/170515670-dbc78954-cbea-41e4-8a77-80361456d42a.png)
+![Searching2](https://user-images.githubusercontent.com/92301625/170515731-11125258-33ee-4c2f-a70d-f57b14ad5104.png)
 
 ***
 
@@ -62,7 +64,7 @@ This Web-Api server uses:
 * Fill all fields
 * Press on `create` button
 ### How to search a specific feedback:
-* Enter your serch
+* Enter your search
 * press on the `search` button
 
 ***
